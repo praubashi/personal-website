@@ -1,0 +1,143 @@
+/* General Styles */
+body {
+    background-color: #1a1a1a; /* Dark background */
+    color: #ff0000; /* Red text */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    border-bottom: 2px solid #ff0000;
+    width: 100%;
+    max-width: 800px;
+}
+
+nav {
+    margin: 20px 0;
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+}
+
+nav a {
+    color: #ff0000; /* Red text for links */
+    text-decoration: none;
+    margin: 0 10px;
+    transition: text-decoration 0.3s;
+}
+
+nav a.active {
+    text-decoration: underline; /* Underline active link */
+}
+
+nav a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+main {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+}
+
+.about-me {
+    width: 100%;
+    margin: 20px auto;
+}
+
+.card {
+    background-color: #2a2a2a; /* Slightly lighter dark for card background */
+    border: 1px solid #ff3333; /* Red border for cards */
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center; /* Center text in cards */
+}
+
+.card h2 {
+    color: #ff3333; /* Lighter red for headings */
+    margin-bottom: 20px;
+}
+
+.card p {
+    margin: 15px 0;
+    line-height: 1.6;
+}
+
+.date {
+    color: #ff6666; /* Lighter red for date */
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid #ff0000;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 800px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    nav a {
+        margin: 0 5px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    footer {
+        padding: 15px;
+    }
+
+    .social-media {
+        margin-top: 20px;
+    }
+    
+    .social-media h2 {
+        color: white; /* Change heading color to white */
+    }
+    
+    .social-media ul {
+        list-style-type: none;
+        padding: 0;
+        display: flex; /* Display items in a row */
+        gap: 20px; /* Space between items */
+    }
+    
+    .social-media li {
+        margin: 0; /* Remove margin for list items */
+    }
+    
+    .social-media a {
+        text-decoration: none;
+        color: white; /* Set link color to white */
+        font-size: 18px; /* Adjust size as needed */
+    }
+    
+    .social-media a:hover {
+        color: #007bff; /* Change color on hover */
+    }
+    
+    .social-media i {
+        margin-right: 8px; /* Space between icon and text */
+    }
+}
